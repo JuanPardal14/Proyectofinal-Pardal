@@ -1,0 +1,10 @@
+body {
+    background-image: url('/img/fondotienda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+td {
+    color:white;
+    font-weight:bold;
+    
+}
