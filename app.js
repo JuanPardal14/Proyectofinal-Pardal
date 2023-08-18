@@ -88,21 +88,6 @@ function newRow(item, index) {
   total.textContent = carrito.reduce((acc, item) => acc + item.producto.precio * item.cantidad, 0);
 }
 
-function vaciarcarrito() {
-  swal.fire({
-    title: '¿Está seguro de vaciar el carrito?',
-    confirmButtontext: 'Si',
-    showCancelButton: true,
-    cancelButtonText: 'No', 
-  }).then((result) =>  {
-    if (result.isConfirmed) {
-      carrito = [];
-      localStorage.setItem('carrito', JSON.stringfly(carrito));
-      actualizarTablaCarrito();
-    }
-  });
-}
-
 
 function allEventListeners() {
 
